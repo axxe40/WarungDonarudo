@@ -1,5 +1,6 @@
 // LOGIN
-function login() {
+function login(event) {
+    event.preventDefault()
     const username = document.getElementById('username').value;
     const uang = document.getElementById('jumlahUang').value;
 
