@@ -59,13 +59,18 @@ function updateCart() {
             </div>
         `;
   });
-  const uang = document.getElementById("jumlahUang").value;
+  const uangStr = document.getElementById("jumlahUang").value;
+  const uang = parseFloat(uangStr.replace(/,/g, ''));
   const balanceStatusElement = document.getElementById("balanceStatus");
-  // console.log("uang "+uang);
-  balanceStatusElement.innerHTML =
-    totalPrice > uang ? "Saldo tidak mencukupi!!!" : "Lanjut ke pembayaran -->";
-  balanceStatusElement.innerHTML =
-    totalPrice == 0 ? "Pesen dulu cuy!" : "Lanjut ke pembayaran -->";
+  console.log("uang "+uang+ typeof uang);
+  console.log("grandTotal "+grandTotal+ typeof grandTotal);
+  if (grandTotal > uang){
+    balanceStatusElement.innerHTML = "Saldo tidak mencukupi!!!"
+  }else if (grandTotal == 0){
+    balanceStatusElement.innerHTML = "Pesen dulu cuy!"
+  }else{
+    balanceStatusElement.innerHTML = "Lanjut ke pembayaran -->"
+  }
 }
 function addQty(productId) {
   var item = cartItems.find((x) => x.id == productId);
