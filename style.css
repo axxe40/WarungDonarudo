@@ -41,18 +41,22 @@ body {
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  margin-left: 50px;
+  margin-left: 0px;
   margin-top: 0px;
   margin-bottom: 0px;
 }
 
+.posterLogin {
+  padding: 0;
+}
+
 .posterLogin img {
   height: 533px;
-  margin-left: 150px;
+  margin-left: 0;
 }
 
 .loginForm {
-  margin-left: 150px;
+  margin-left: 50px;
 }
 
 .titleLogin {
@@ -185,7 +189,7 @@ form {
   height: 40px;
   font-size: 20px;
   font-weight: bold;
-  padding: 5px 25px;
+  padding: 5px 15px;
 }
 
 .quantity-controls {
@@ -221,15 +225,16 @@ form {
 
 .quantity {
   margin: 0 20px;
-  padding: 5px 30px;
+  padding: 5px 5px;
+  width: 75px;
+  text-align: center;
   background-color: #fff;
   border: 1px solid gray;
   border-radius: 10px;
 }
 
 .item-price {
-  display: flex;
-  flex-grow: 1;
+  width: 255px;
   background-color: #fff;
   padding: 5px 25px;
   border-radius: 10px;
