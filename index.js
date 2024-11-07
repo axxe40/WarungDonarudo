@@ -7,12 +7,11 @@ function login(event) {
     if (!username || !uang) {
         alert('Tolong isi yang benar!')
     } else {
-        alert(`Hello ${username}! Selamat Berbelanja`)
+        // alert(`Hello ${username}! Selamat Berbelanja`)
         const catalogPage = document.getElementById("catalogPage");
         catalogPage.classList = [];
         const loginPage = document.getElementById("loginPage");
         loginPage.classList = ['hide']
-        
     }
     const namaPelanggan = document.getElementById("nama");
     namaPelanggan.innerText = `Hello, Welcome ${username}!`; 
