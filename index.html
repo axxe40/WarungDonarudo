@@ -1,383 +1,423 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WarungDonarudo</title>
 
     <!--Bootstrap-->
-    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="bootstrap.css" />
     <script src="bootstrap.min.js"></script>
     <!--Bootstrap-->
 
     <!--CSS-->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <!--CSS-->
 
     <!--Font Inter-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-        rel="stylesheet">
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
     <!--Font Inter-->
 
     <!--Font Kalam -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
     <!--Font Kalam-->
+  </head>
 
-</head>
-
-<body>
+  <body>
     <!--Header-->
     <section class="header">
-        <div class="header-content">
-            <img src="./asset/logo.png" alt="Logo" class="header-logo">
-            <h1 class="header-title">WARUNG DONARUDO</h1>
-        </div>
+      <div class="header-content">
+        <img src="./asset/logo.png" alt="Logo" class="header-logo" />
+        <h1 class="header-title">WARUNG DONARUDO</h1>
+      </div>
     </section>
     <!--Header-->
 
     <div id="loginPage">
-        <!-- Form Login -->
-        <section>
-            <div class="row loginPage">
-                <div class="col-6 posterLogin">
-                    <img src="./asset/left_panel.png">
-                </div>
-                <div class="col-4 loginForm">
-                    <div class="titleLogin">
-                        <h2 class="text-dark text-center">Login</h2>
-                        <p class="text-dark text-center">Silahkan masukan nama dan jumlah uang anda</p>
-                    </div>
-
-                    <form>
-                        <div class="form-group ">
-                            <label for="username"></label>
-                            <input type="text" class="form-control" id="username"
-                                placeholder="Username">
-                        </div>
-                        <div class="form-group">
-                            <label for="jumlahUang"></label>
-                            <input type="number" class="form-control" id="jumlahUang"
-                                placeholder="Jumlah Uang">
-                        </div>
-                        <div class="submit">
-                            <button type="submit" class="btn btn-login" onclick="login(event)">Submit</button>
-                        </div>
-                    </form>
-                </div>
+      <!-- Form Login -->
+      <section>
+        <div class="row loginPage">
+          <div class="col-6 posterLogin">
+            <img src="./asset/left_panel.png" />
+          </div>
+          <div class="col-4 loginForm">
+            <div class="titleLogin">
+              <h2 class="text-dark text-center">Login</h2>
+              <p class="text-dark text-center">
+                Silahkan masukan nama dan jumlah uang anda
+              </p>
             </div>
-        </section>
-        <!-- Form Login -->
 
+            <form>
+              <div class="form-group">
+                <label for="username"></label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="username"
+                  placeholder="Username"
+                />
+              </div>
+              <div class="form-group">
+                <label for="jumlahUang"></label>
+                <input
+                  type="number"
+                  class="form-control"
+                  id="jumlahUang"
+                  placeholder="Jumlah Uang"
+                />
+              </div>
+              <div class="submit">
+                <button
+                  type="submit"
+                  class="btn btn-login"
+                  onclick="login(event)"
+                >
+                  Submit
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+      <!-- Form Login -->
 
-        <!-- Footer -->
-        <section class="footer">
-            <div class="left-footer text-dark">
-                <img src="./asset/logo.png" alt="Logo" class="logo">
-                <p>WARUNG DONARUDO</p>
+      <!-- Footer -->
+      <section class="footer">
+        <div class="left-footer text-dark">
+          <img src="./asset/logo.png" alt="Logo" class="logo" />
+          <p>WARUNG DONARUDO</p>
+        </div>
+        <div class="right text-dark">
+          <h4>Tentang kami:</h4>
+          <div class="profiles">
+            <div class="profile">
+              <img src="./asset/christian.png" alt="Chris" />
+              <p>Chris</p>
             </div>
-            <div class="right text-dark">
-                <h4>Tentang kami:</h4>
-                <div class="profiles">
-                    <div class="profile">
-                        <img src="./asset/christian.png" alt="Chris">
-                        <p>Chris</p>
-                    </div>
-                    <div class="profile">
-                        <img src="./asset/jesslyn.png" alt="Jess">
-                        <p>Jess</p>
-                    </div>
-                    <div class="profile">
-                        <img src="./asset/joshua.png" alt="Josh">
-                        <p>Josh</p>
-                    </div>
-                    <div class="profile">
-                        <img src="./asset/valih.png" alt="Val">
-                        <p>Val</p>
-                    </div>
-                    <div class="profile">
-                        <img src="./asset/yudi.png" alt="Yudi">
-                        <p>Yudi</p>
-                    </div>
-                </div>
+            <div class="profile">
+              <img src="./asset/jesslyn.png" alt="Jess" />
+              <p>Jess</p>
             </div>
-        </section>
-        <!-- Footer -->
+            <div class="profile">
+              <img src="./asset/joshua.png" alt="Josh" />
+              <p>Josh</p>
+            </div>
+            <div class="profile">
+              <img src="./asset/valih.png" alt="Val" />
+              <p>Val</p>
+            </div>
+            <div class="profile">
+              <img src="./asset/yudi.png" alt="Yudi" />
+              <p>Yudi</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Footer -->
     </div>
 
     <div id="catalogPage" class="hide">
-        <!--Landing-->
-        <section>
-            <div class="container" id="test">
-
-                <!--Welcome Landing-->
-                <div class="d-flex pt-4">
-                    <div class="me-auto text-start">
-                        <span id="nama" class="text-dark fs-title-2 fw-bold"></span>
-                    </div>
-
-                    <div class="">
-                        <span class="text-dark fs-title-2 fw-bold">Wallet:</span>
-                        <span class="text-dark fs-title-2 fw-bold px-2" id="wallet"></span>
-                        <!-- <button type="button" class="btn btn-success">Top-up</button> -->
-                    </div>
-                </div>
-                <!--Welcome Landing-->
-
-                <!--Menu Landing-->
-                <div class="text-center pt-5">
-                    <h1 class="text-dark fs-title-1 fw-bold">Our Menu</h1>
-                </div>
-
-                <div class="row pt-5">
-                    <div class="col-sm-4 mb-3 mb-sm-0">
-                        <!--Card Burger-->
-                        <div class="card bg-card card-width border-0">
-                            <img src="./asset/burger.png" class="card-img-top img-menu" alt="Burger">
-                            <div class="card-body card-bottom-width">
-                                <h5 class="card-title fs-1 fw-bold px-3">Burger</h5>
-                                <p class="card-text fs-2 px-3">100% Local grass-fed beef patty with lettuce, tomato and
-                                    cheese
-                                </p>
-                                <div class="pt-5 d-flex">
-                                    <div class="px-3">
-                                        <button
-                                            class="btn btn-menu rounded-pill btn-menu-size rounded-pill btn-menu-size fw-bold fs-2"
-                                            onclick="addToCart(1)">Add
-                                            to
-                                            cart</button>
-                                    </div>
-                                    <div class="pt-2 px-3">
-                                        <span class="fs-2">Rp.75,000,00</span>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-                        <!--Card Burger-->
-
-                    </div>
-                    <div class="col-sm-4">
-
-                        <!--Card French Fries-->
-                        <div class="card bg-card card-width border-0">
-                            <img src="./asset/fries.png" class="card-img-top img-menu" alt="French Fries">
-                            <div class="card-body card-bottom-width">
-                                <h5 class="card-title fs-1 fw-bold px-3">French Fries</h5>
-                                <p class="card-text fs-2 px-3">Unhealthy but delicious way to enjoy your favourite
-                                    potato
-                                </p>
-                                <div class="pt-5 d-flex">
-                                    <div class="px-3">
-                                        <button
-                                            class="btn btn-menu rounded-pill btn-menu-size rounded-pill btn-menu-size fw-bold fs-2"
-                                            onclick="addToCart(2)">Add
-                                            to
-                                            cart</button>
-                                    </div>
-                                    <div class="pt-2 px-3">
-                                        <span class="fs-2">Rp.49,000,00</span>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-                        <!--Card French Fries-->
-                    </div>
-                    <div class="col-sm-4">
-
-                        <!--Card Pizza Veggie-->
-                        <div class="card bg-card card-width border-0">
-                            <img src="asset/pizza.png" class="card-img-top img-menu" alt="Pizza Veggie">
-                            <div class="card-body card-bottom-width">
-                                <h5 class="card-title fs-1 fw-bold px-3">Pizza Veggie</h5>
-                                <p class="card-text fs-2 px-3">Italian pizza with beef slices, arugula, and mozzarella
-                                    cheese
-                                </p>
-                                <div class="pt-5 d-flex">
-                                    <div class="px-3">
-                                        <button
-                                            class="btn btn-menu rounded-pill btn-menu-size rounded-pill btn-menu-size fw-bold fs-2"
-                                            onclick="addToCart(3)">Add
-                                            to
-                                            cart</button>
-                                    </div>
-                                    <div class="pt-2 px-3">
-                                        <span class="fs-2">Rp.135,000,00</span>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-                        <!--Card Pizza Veggie-->
-
-                    </div>
-                </div>
-
-                <div class="row pt-5">
-                    <div class="col-sm-4 mb-3 mb-sm-0">
-
-                        <!--Card Korean BBQ Chicken-->
-                        <div class="card bg-card card-width border-0">
-                            <img src="asset/chicken.png" class="card-img-top img-menu" alt="Korean BBQ Chicken">
-                            <div class="card-body card-bottom-width">
-                                <h5 class="card-title fs-1 fw-bold px-3">Korean BBQ Chicken</h5>
-                                <p class="card-text fs-2 px-3">Authentic Korean fried chicken with BBQ and honey glazed
-                                </p>
-                                <div class="pt-5 d-flex">
-                                    <div class="px-3">
-                                        <button
-                                            class="btn btn-menu rounded-pill btn-menu-size rounded-pill btn-menu-size fw-bold fs-2"
-                                            onclick="addToCart(4)">Add
-                                            to
-                                            cart</button>
-                                    </div>
-                                    <div class="pt-2 px-3">
-                                        <span class="fs-2">Rp.99,000,00</span>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-                        <!--Card Korean BBQ Chicken-->
-                    </div>
-                    <div class="col-sm-4">
-                        <!--Card New York Sandwich-->
-                        <div class="card bg-card card-width border-0">
-                            <img src="asset/sandwich.png" class="card-img-top img-menu" alt="New York Sandwich">
-                            <div class="card-body card-bottom-width">
-                                <h5 class="card-title fs-1 fw-bold px-3">New York Sandwich</h5>
-                                <p class="card-text fs-2 px-3">Our special homemade sandwich with spicy chicken and
-                                    coleslaw
-                                </p>
-                                <div class="pt-5 d-flex">
-                                    <div class="px-3">
-                                        <button
-                                            class="btn btn-menu rounded-pill btn-menu-size rounded-pill btn-menu-size fw-bold fs-2"
-                                            onclick="addToCart(5)">Add
-                                            to
-                                            cart</button>
-                                    </div>
-                                    <div class="pt-2 px-3">
-                                        <span class="fs-2">Rp.60,000,00</span>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-                        <!--Card New York Sandwich-->
-
-                    </div>
-                    <div class="col-sm-4">
-
-                        <!--Card Hot Chocolate-->
-                        <div class="card bg-card card-width border-0">
-                            <img src="asset/choco.png" class="card-img-top img-menu" alt="Hot Chocolate">
-                            <div class="card-body card-bottom-width">
-                                <h5 class="card-title fs-1 fw-bold px-3">Hot Chocolate</h5>
-                                <p class="card-text fs-2 px-3">Freshly made from 60% dark Belgian chocolate
-                                </p>
-                                <div class="pt-5 d-flex">
-                                    <div class="px-3">
-                                        <button
-                                            class="btn btn-menu rounded-pill btn-menu-size rounded-pill btn-menu-size fw-bold fs-2"
-                                            onclick="addToCart(6)">Add
-                                            to
-                                            cart</button>
-                                    </div>
-                                    <div class="pt-2 px-3">
-                                        <span class="fs-2">Rp.49,000,00</span>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-                        <!--Card Hot Chocolate-->>
-
-                    </div>
-                </div>
-                <!--Menu Landing-->
-
-            </div>
-        </section>
-        <!--Landing-->
-
-        <!-- Cart -->
-        <section class="cart text-dark">
-            <!-- First div: My Cart title -->
-            <div class="cart-title">
-                <h1 class="text-dark fs-title-1 fw-bold pt-5">My Cart</h1>
+      <!--Landing-->
+      <section>
+        <div class="container" id="test">
+          <!--Welcome Landing-->
+          <div class="d-flex pt-4">
+            <div class="me-auto text-start">
+              <span id="nama" class="text-dark fs-title-2 fw-bold"></span>
             </div>
 
-            <!-- Second div: Order items -->
-            <div id="cart-items" class="order-container row pt-5">
-                <!-- Order Item 1 -->
-
-
+            <div class="">
+              <span class="text-dark fs-title-2 fw-bold">Wallet:</span>
+              <span
+                class="text-dark fs-title-2 fw-bold px-2"
+                id="wallet"
+              ></span>
+              <!-- <button type="button" class="btn btn-success">Top-up</button> -->
             </div>
-            <!-- Third div: Total box -->
-            <div class="total-box col-sm-6">
-                <div class="total-text">
-                    <p>Total Harga:</p>
-                </div>
-                <div id="totalAmount" class="totalPurchase">
-                    <p>Rp. 0</p>
-                </div>
-                <div id="balanceStatus" class="checkout-button">
-                    <p>Pesen dulu cuy!</p>
-                </div>
+          </div>
+          <!--Welcome Landing-->
 
-            </div>
+          <!--Menu Landing-->
+          <div class="text-center pt-5">
+            <h1 class="text-dark fs-title-1 fw-bold">Our Menu</h1>
+          </div>
 
-            <!-- Fourth div: Small text below total box -->
-            <p class="small-text col-sm-6"><sup>*</sup>Total harga sudah termasuk ppn 11% dan service fee 15%</p>
-        </section>
-        <!-- Cart -->
-
-        <!-- Footer -->
-        <section class="footer">
-            <div class="left-footer text-dark">
-                <img src="./asset/logo.png" alt="Logo" class="logo">
-                <p>WARUNG DONARUDO</p>
-            </div>
-            <div class="right text-dark">
-                <h4>Tentang kami:</h4>
-                <div class="profiles">
-                    <div class="profile">
-                        <img src="./asset/christian.png" alt="Chris">
-                        <p>Chris</p>
+          <div class="row pt-5">
+            <div class="col-sm-4 mb-3 mb-sm-0">
+              <!--Card Burger-->
+              <div class="card bg-card card-width border-0">
+                <img
+                  src="./asset/burger.png"
+                  class="card-img-top img-menu"
+                  alt="Burger"
+                />
+                <div class="card-body card-bottom-width">
+                  <h5 class="card-title fs-1 fw-bold px-3">Burger</h5>
+                  <p class="card-text fs-2 px-3">
+                    100% Local grass-fed beef patty with lettuce, tomato and
+                    cheese
+                  </p>
+                  <div class="pt-5 d-flex">
+                    <div class="px-3">
+                      <button
+                        class="btn btn-menu rounded-pill btn-menu-size rounded-pill btn-menu-size fw-bold fs-2"
+                        onclick="addToCart(1)"
+                      >
+                        Add to cart
+                      </button>
                     </div>
-                    <div class="profile">
-                        <img src="./asset/jesslyn.png" alt="Jess">
-                        <p>Jess</p>
+                    <div class="pt-2 px-3">
+                      <span class="fs-2">Rp.75,000,00</span>
                     </div>
-                    <div class="profile">
-                        <img src="./asset/joshua.png" alt="Josh">
-                        <p>Josh</p>
-                    </div>
-                    <div class="profile">
-                        <img src="./asset/valih.png" alt="Val">
-                        <p>Val</p>
-                    </div>
-                    <div class="profile">
-                        <img src="./asset/yudi.png" alt="Yudi">
-                        <p>Yudi</p>
-                    </div>
+                  </div>
                 </div>
+              </div>
+              <!--Card Burger-->
             </div>
-        </section>
-        <!-- Footer -->
+            <div class="col-sm-4">
+              <!--Card French Fries-->
+              <div class="card bg-card card-width border-0">
+                <img
+                  src="./asset/fries.png"
+                  class="card-img-top img-menu"
+                  alt="French Fries"
+                />
+                <div class="card-body card-bottom-width">
+                  <h5 class="card-title fs-1 fw-bold px-3">French Fries</h5>
+                  <p class="card-text fs-2 px-3">
+                    Unhealthy but delicious way to enjoy your favourite potato
+                  </p>
+                  <div class="pt-5 d-flex">
+                    <div class="px-3">
+                      <button
+                        class="btn btn-menu rounded-pill btn-menu-size rounded-pill btn-menu-size fw-bold fs-2"
+                        onclick="addToCart(2)"
+                      >
+                        Add to cart
+                      </button>
+                    </div>
+                    <div class="pt-2 px-3">
+                      <span class="fs-2">Rp.49,000,00</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--Card French Fries-->
+            </div>
+            <div class="col-sm-4">
+              <!--Card Pizza Veggie-->
+              <div class="card bg-card card-width border-0">
+                <img
+                  src="asset/pizza.png"
+                  class="card-img-top img-menu"
+                  alt="Pizza Veggie"
+                />
+                <div class="card-body card-bottom-width">
+                  <h5 class="card-title fs-1 fw-bold px-3">Pizza Veggie</h5>
+                  <p class="card-text fs-2 px-3">
+                    Italian pizza with beef slices, arugula, and mozzarella
+                    cheese
+                  </p>
+                  <div class="pt-5 d-flex">
+                    <div class="px-3">
+                      <button
+                        class="btn btn-menu rounded-pill btn-menu-size rounded-pill btn-menu-size fw-bold fs-2"
+                        onclick="addToCart(3)"
+                      >
+                        Add to cart
+                      </button>
+                    </div>
+                    <div class="pt-2 px-3">
+                      <span class="fs-2">Rp.135,000,00</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--Card Pizza Veggie-->
+            </div>
+          </div>
+
+          <div class="row pt-5">
+            <div class="col-sm-4 mb-3 mb-sm-0">
+              <!--Card Korean BBQ Chicken-->
+              <div class="card bg-card card-width border-0">
+                <img
+                  src="asset/chicken.png"
+                  class="card-img-top img-menu"
+                  alt="Korean BBQ Chicken"
+                />
+                <div class="card-body card-bottom-width">
+                  <h5 class="card-title fs-1 fw-bold px-3">
+                    Korean BBQ Chicken
+                  </h5>
+                  <p class="card-text fs-2 px-3">
+                    Authentic Korean fried chicken with BBQ and honey glazed
+                  </p>
+                  <div class="pt-5 d-flex">
+                    <div class="px-3">
+                      <button
+                        class="btn btn-menu rounded-pill btn-menu-size rounded-pill btn-menu-size fw-bold fs-2"
+                        onclick="addToCart(4)"
+                      >
+                        Add to cart
+                      </button>
+                    </div>
+                    <div class="pt-2 px-3">
+                      <span class="fs-2">Rp.99,000,00</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--Card Korean BBQ Chicken-->
+            </div>
+            <div class="col-sm-4">
+              <!--Card New York Sandwich-->
+              <div class="card bg-card card-width border-0">
+                <img
+                  src="asset/sandwich.png"
+                  class="card-img-top img-menu"
+                  alt="New York Sandwich"
+                />
+                <div class="card-body card-bottom-width">
+                  <h5 class="card-title fs-1 fw-bold px-3">
+                    New York Sandwich
+                  </h5>
+                  <p class="card-text fs-2 px-3">
+                    Our special homemade sandwich with spicy chicken and
+                    coleslaw
+                  </p>
+                  <div class="pt-5 d-flex">
+                    <div class="px-3">
+                      <button
+                        class="btn btn-menu rounded-pill btn-menu-size rounded-pill btn-menu-size fw-bold fs-2"
+                        onclick="addToCart(5)"
+                      >
+                        Add to cart
+                      </button>
+                    </div>
+                    <div class="pt-2 px-3">
+                      <span class="fs-2">Rp.60,000,00</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--Card New York Sandwich-->
+            </div>
+            <div class="col-sm-4">
+              <!--Card Hot Chocolate-->
+              <div class="card bg-card card-width border-0">
+                <img
+                  src="asset/choco.png"
+                  class="card-img-top img-menu"
+                  alt="Hot Chocolate"
+                />
+                <div class="card-body card-bottom-width">
+                  <h5 class="card-title fs-1 fw-bold px-3">Hot Chocolate</h5>
+                  <p class="card-text fs-2 px-3">
+                    Freshly made from 60% dark Belgian chocolate
+                  </p>
+                  <div class="pt-5 d-flex">
+                    <div class="px-3">
+                      <button
+                        class="btn btn-menu rounded-pill btn-menu-size rounded-pill btn-menu-size fw-bold fs-2"
+                        onclick="addToCart(6)"
+                      >
+                        Add to cart
+                      </button>
+                    </div>
+                    <div class="pt-2 px-3">
+                      <span class="fs-2">Rp.49,000,00</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--Card Hot Chocolate-->>
+            </div>
+          </div>
+          <!--Menu Landing-->
+        </div>
+      </section>
+      <!--Landing-->
+
+      <!-- Cart -->
+      <section class="cart text-dark">
+        <!-- First div: My Cart title -->
+        <div class="cart-title">
+          <h1 class="text-dark fs-title-1 fw-bold pt-5">My Cart</h1>
+        </div>
+
+        <!-- Second div: Order items -->
+        <div id="cart-items" class="order-container row pt-5">
+          <!-- Order Item 1 -->
+        </div>
+        <!-- Third div: Total box -->
+        <div class="total-box col-sm-6">
+          <div class="total-text">
+            <p>Total Harga:</p>
+          </div>
+          <div id="totalAmount" class="totalPurchase">
+            <p>Rp. 0</p>
+          </div>
+          <div id="balanceStatus" class="checkout-button">
+            <p>Pesen dulu cuy!</p>
+          </div>
+        </div>
+
+        <!-- Fourth div: Small text below total box -->
+        <p class="small-text col-sm-6">
+          <sup>*</sup>Total harga sudah termasuk ppn 11% dan service fee 15%
+        </p>
+      </section>
+      <!-- Cart -->
+
+      <!-- Footer -->
+      <section class="footer">
+        <div class="left-footer text-dark">
+          <img src="./asset/logo.png" alt="Logo" class="logo" />
+          <p>WARUNG DONARUDO</p>
+        </div>
+        <div class="right text-dark">
+          <h4>Tentang kami:</h4>
+          <div class="profiles">
+            <div class="profile">
+              <img src="./asset/christian.png" alt="Chris" />
+              <p>Chris</p>
+            </div>
+            <div class="profile">
+              <img src="./asset/jesslyn.png" alt="Jess" />
+              <p>Jess</p>
+            </div>
+            <div class="profile">
+              <img src="./asset/joshua.png" alt="Josh" />
+              <p>Josh</p>
+            </div>
+            <div class="profile">
+              <img src="./asset/valih.png" alt="Val" />
+              <p>Val</p>
+            </div>
+            <div class="profile">
+              <img src="./asset/yudi.png" alt="Yudi" />
+              <p>Yudi</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Footer -->
     </div>
 
     <!--JS-->
     <script src="index.js"></script>
     <!--JS-->
-
-</body>
-
+  </body>
 </html>
